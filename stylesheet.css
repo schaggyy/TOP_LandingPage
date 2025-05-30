@@ -1,16 +1,27 @@
-.header{
-    background-color: #1F2937;
+/* Header, Logo, links: */
+.header{ /* just the header */
     display: flex;
-    flex-direction: row;
-    margin: -10px;
+    justify-content: space-between;
+    padding: 0px 260px;
+    flex-wrap: wrap;
+
 }
 
 #headerlogo{
     color: #F9FAF8;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
-    flex: 2 1 0;
-    margin-left: 55px;
+    flex-wrap: wrap;
+}
+
+.mainheader{ /* Header + Main */
+    justify-content: center;
+    background-color: #1F2937;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    flex-direction: column;
+    flex: 1 0;
 }
 
 .headerlinks{
@@ -18,8 +29,6 @@
     flex-direction: row;
     gap: 24px;
     align-items: center;
-    display: flex;
-    margin-right: 2%;
 }
 
 .singleheaderlink{
@@ -28,3 +37,181 @@
     font-family: Arial, Helvetica, sans-serif;
     flex: auto;
 } 
+
+/* H1, Placeholder, Sign-up Button: */
+
+.mainarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+
+.maintext{
+
+    color: #E5E7EB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#mainsubext{
+    font-size: 18px;
+    max-width: 500px;
+    font-weight: lighter;
+}
+
+#placeholder {
+    display: flex;
+    align-items: center;       /* vertikal zentrieren */
+    justify-content: center;   /* horizontal zentrieren */
+
+    width: 400px;              /* Beispielgröße */
+    height: 230px;             /* Höhe definieren */
+
+    background-color: #6d6f71;
+    color: #F9FAF8Fa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+
+    margin-left: 50px;
+}
+
+.signup{
+    background-color: #3882F6;
+    font-size: 18px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+#mainh1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Random Information: */
+
+.infotext {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.infoplaceholder{
+    width: 125px;
+    height: 125px;
+    border-width: 3px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.infosubtext{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.singleinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Quote */
+
+.Quote{
+    background-color: #E5E7EB;
+    Padding: 90px 120px;
+}
+
+.quotetext {
+    margin: 20px auto 0 auto;             /* Außenabstand */
+    text-align: justify;   /* ← macht Blocksatz */
+    text-justify: inter-word; /* optional: bessere Wortverteilung */
+    max-width: 600px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-style: italic, light;
+    font-weight: 10;
+}
+.quoteautor{
+    margin: 20px auto 0 auto;             /* Außenabstand */
+    text-align: justify;   /* ← macht Blocksatz */
+    text-justify: inter-word; /* optional: bessere Wortverteilung */
+    max-width: 600px;
+    text-align: right;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 600;
+}
+
+/* Call to Action */
+.CallToAction { 
+    background-color: #3882F6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 70px 320px ;
+    border-radius: 5px;
+    padding: 25px 75px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #F9FAF8;
+
+}
+
+.CtoAText{
+    flex: content;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+}
+
+.CtoAMain {
+
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+
+.CtoAsub{
+    font-weight: 10;
+    font-size: smaller;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.CtoAsignUp {
+    border: #E5E7EB;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2.5px;
+    font-size: 14px;
+    font-weight: bolder;
+    display: flex;
+    margin: 20px 0px 20px 100px;
+    padding: 10px 12px;
+    
+}
